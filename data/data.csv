@@ -1,0 +1,11 @@
+text,category
+"I can't log into my account","Account"
+"My payment was deducted twice","Billing"
+"App is crashing when I open it","Technical"
+"How do I change my password?","Account"
+"I want a refund","Billing"
+"The website is very slow","Technical"
+"What are your working hours?","General"
+"I forgot my username","Account"
+"Charged incorrectly","Billing"
+"Feature is not working","Technical"
