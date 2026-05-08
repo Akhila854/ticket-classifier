@@ -6,16 +6,18 @@ An end-to-end NLP-based machine learning system that classifies customer support
 
 ## 🔥 Features
 
-* Real-time text classification API (FastAPI)
-* TF-IDF + Logistic Regression model
-* Prediction logging for monitoring (MLOps)
+* Real-time text classification API using FastAPI
+* Interactive Streamlit UI for predictions
+* TF-IDF + Logistic Regression NLP model
+* Prediction logging for monitoring and retraining (MLOps)
 * Dockerized for deployment
+* Modular project structure for scalability
 
 ---
 
 ## 🚀 Demo
 
-### Request
+### API Request
 
 POST `/predict`
 
@@ -39,7 +41,7 @@ POST `/predict`
 ## 🏗️ Architecture
 
 ```
-[Input Text] → [TF-IDF] → [ML Model] → [FastAPI] → [Prediction + Logging]
+[Streamlit UI] → [FastAPI API] → [TF-IDF Vectorizer] → [ML Model] → [Prediction + Logging]
 ```
 
 ---
@@ -49,7 +51,9 @@ POST `/predict`
 * Python
 * Scikit-learn
 * FastAPI
+* Streamlit
 * Docker
+* Git
 
 ---
 
@@ -73,6 +77,13 @@ Open in browser:
 http://127.0.0.1:8001/docs
 ```
 
+---
+## 🎨Run Streamlit Frontend
+```
+streamlit run src/app.py
+
+```
+http://localhost:8501
 ---
 
 ## 🐳 Run with Docker
@@ -100,8 +111,8 @@ logs/predictions.jsonl
 
 This enables:
 
-* Monitoring model performance
-* Debugging predictions
+* Monitoring prediction behavior
+* Debugging incorrect predictions
 * Collecting data for future retraining
 
 ---
@@ -111,6 +122,10 @@ This enables:
 ```
 ticket-classifier/
 ├── src/
+│   ├── main.py
+│   ├── train.py
+│   ├── test_model.py
+│   └── app.py
 ├── data/
 ├── models/
 ├── logs/
@@ -129,7 +144,9 @@ Model files and logs are excluded from the repository and generated during runti
 
 ## 🎯 Key Highlights
 
-* End-to-end ML system (not just a notebook)
-* Real-time API with FastAPI
-* Logging for production monitoring
+* End-to-end NLP application
+* Real-time prediction API
+* Interactive frontend UI
+* Logging for MLOps monitoring
 * Dockerized for deployment
+* Production-oriented project structure
