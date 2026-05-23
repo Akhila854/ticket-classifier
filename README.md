@@ -1,119 +1,132 @@
-# 🚀 Smart Support Ticket Classifier
+# 🎫 Smart Support Ticket Classifier
 
-An end-to-end NLP-based machine learning system that classifies customer support queries and serves real-time predictions via a FastAPI API.
-
----
-
-## 🔥 Features
-
-* Real-time text classification API using FastAPI
-* Interactive Streamlit UI for predictions
-* TF-IDF + Logistic Regression NLP model
-* Prediction logging for monitoring and retraining (MLOps)
-* Dockerized for deployment
-* Modular project structure for scalability
+An LLM-powered IT support ticket classification system using 
+sentence-transformers embeddings, production-grade FastAPI, and 
+an end-to-end CI/CD pipeline.
 
 ---
 
-## 🚀 Demo
+## 📊 Model Performance
 
-### API Request
+| Metric | Score |
+|--------|-------|
+| F1 Score (weighted) | **1.00** |
+| Train samples | 400 |
+| Test samples | 100 |
+| Categories | 5 (Hardware, Software, Network, Account, Security) |
+| Embedding model | `sentence-transformers/all-MiniLM-L6-v2` |
 
-POST `/predict`
-
-```json
-{
-  "text": "I forgot my password"
-}
-```
-
-### Response
-
-```json
-{
-  "category": "Account",
-  "confidence": 0.91
-}
-```
+> Upgraded from TF-IDF baseline — LLM embeddings capture semantic 
+> meaning that keyword matching cannot.
 
 ---
 
 ## 🏗️ Architecture
 
-```
-[Streamlit UI] → [FastAPI API] → [TF-IDF Vectorizer] → [ML Model] → [Prediction + Logging]
-```
+User Request
+│
+▼
+Streamlit UI ──► FastAPI (async) ──► sentence-transformers
+│                  (LLM embeddings)
+API Key Auth                    │
+JSON Logging            LogisticRegression
+Request Tracing                 │
+│               label + confidence
+▼
+/health  /predict  /model/info
+
+---
+
+## 🔥 Features
+
+- **LLM Embeddings** — `all-MiniLM-L6-v2` instead of TF-IDF for 
+  semantically rich text representations
+- **Production API** — Async FastAPI with API key auth, structured 
+  JSON logging, per-request tracing IDs
+- **Observability** — `/health` endpoint, latency logged on every request
+- **CI/CD Pipeline** — GitHub Actions: test → Docker build → smoke test 
+  on every push to main
+- **Containerised** — Fully Dockerized for reproducible deployment
+- **Interactive UI** — Streamlit interface for single and batch predictions
 
 ---
 
 ## ⚙️ Tech Stack
 
-* Python
-* Scikit-learn
-* FastAPI
-* Streamlit
-* Docker
-* Git
+| Layer | Technology |
+|-------|-----------|
+| Embeddings | sentence-transformers (all-MiniLM-L6-v2) |
+| Classifier | scikit-learn LogisticRegression |
+| API | FastAPI, uvicorn, pydantic |
+| UI | Streamlit |
+| DevOps | Docker, GitHub Actions |
+| Language | Python 3.11 |
 
 ---
 
-## 🖥️ How to Run Locally
+## 🚀 Quick Start
 
 ```bash
 git clone https://github.com/Akhila854/ticket-classifier.git
 cd ticket-classifier
-
 python -m venv venv
-venv\Scripts\activate   # Windows
-
+venv\Scripts\activate        # Windows
 pip install -r requirements.txt
 
-uvicorn src.main:app --reload --port 8001
-```
+# Train the model
+python src/train.py
 
-Open in browser:
+# Start API (Terminal 1)
+uvicorn src.main:app --reload --port 8080
 
-```
-http://127.0.0.1:8001/docs
-```
-
----
-## 🎨Run Streamlit Frontend
-```
+# Launch UI (Terminal 2)
 streamlit run src/app.py
-
 ```
-http://localhost:8501
+
 ---
 
-## 🐳 Run with Docker
+## 🔌 API Endpoints
+
+| Endpoint | Method | Auth | Description |
+|----------|--------|------|-------------|
+| `/health` | GET | No | Health + model status |
+| `/predict` | POST | Yes | Classify a ticket |
+| `/model/info` | GET | Yes | Model metrics |
+
+**Request:**
+```json
+POST /predict
+X-API-Key: dev-secret-key-change-in-prod
+
+{ "text": "My laptop screen is broken and won't turn on" }
+```
+
+**Response:**
+```json
+{
+  "label": "Hardware",
+  "confidence": 0.913,
+  "request_id": "8c6363e7"
+}
+```
+
+---
+
+## 🧪 Tests
+
+```bash
+pytest tests/ -v           # API tests (3 tests)
+pytest src/test_model.py -v  # Model unit tests (5 tests)
+```
+
+---
+
+## 🐳 Docker
 
 ```bash
 docker build -t ticket-classifier .
-docker run -p 8000:8000 ticket-classifier
+docker run -p 8080:8080 ticket-classifier
 ```
-
-Open:
-
-```
-http://127.0.0.1:8000/docs
-```
-
----
-
-## 📊 Logging
-
-Predictions are stored in:
-
-```
-logs/predictions.jsonl
-```
-
-This enables:
-
-* Monitoring prediction behavior
-* Debugging incorrect predictions
-* Collecting data for future retraining
 
 ---
 
@@ -121,32 +134,21 @@ This enables:
 
 ```
 ticket-classifier/
+├── .github/
+│   └── workflows/
+│       └── ci.yml          # GitHub Actions CI/CD
 ├── src/
-│   ├── main.py
-│   ├── train.py
-│   ├── test_model.py
-│   └── app.py
+│   ├── main.py             # FastAPI app
+│   ├── model.py            # TicketClassifier (LLM embeddings)
+│   ├── train.py            # Training script
+│   ├── test_model.py       # Model unit tests
+│   └── app.py              # Streamlit UI
 ├── data/
-├── models/
-├── logs/
+│   └── data.csv            # 500-row IT support dataset
+├── models/                 # Saved model artifacts (generated)
+├── tests/
+│   └── test_api.py         # API integration tests
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
 ```
-
----
-
-## ⚠️ Note
-
-Model files and logs are excluded from the repository and generated during runtime.
-
----
-
-## 🎯 Key Highlights
-
-* End-to-end NLP application
-* Real-time prediction API
-* Interactive frontend UI
-* Logging for MLOps monitoring
-* Dockerized for deployment
-* Production-oriented project structure
