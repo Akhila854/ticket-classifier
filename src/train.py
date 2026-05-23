@@ -1,37 +1,44 @@
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report
-import joblib
+import sys
 import os
+sys.path.insert(0, os.path.dirname(__file__))
+
+import pandas as pd
+import json
+import logging
+from model import TicketClassifier
+
+logging.basicConfig(level=logging.INFO)
 
 # Load data
-data = pd.read_csv("data/data.csv")
+df = pd.read_csv("data/data.csv")
+print(f"Loaded {len(df)} rows")
+print(f"Categories: {df['category'].value_counts().to_dict()}")
 
-# Split
-X_train, X_test, y_train, y_test = train_test_split(
-    data["text"], data["category"], test_size=0.2, random_state=42
+# Drop empty rows
+df = df.dropna(subset=["text", "category"])
+
+# Drop categories with fewer than 10 samples
+df = df[df.groupby("category")["category"].transform("count") >= 10]
+
+print(f"Training on {len(df)} rows across {df['category'].nunique()} categories")
+
+# Train
+clf = TicketClassifier()
+metrics = clf.train(
+    texts=df["text"].tolist(),
+    labels=df["category"].tolist()
 )
 
-# Vectorizer
-vectorizer = TfidfVectorizer(stop_words="english")
+# Save model
+clf.save("models")
 
-X_train_vec = vectorizer.fit_transform(X_train)
-X_test_vec = vectorizer.transform(X_test)
+# Save metrics for README and /model/info endpoint
+with open("metrics.json", "w") as f:
+    json.dump(metrics, f, indent=2)
 
-# Model
-model = LogisticRegression()
-model.fit(X_train_vec, y_train)
-
-# Evaluate
-y_pred = model.predict(X_test_vec)
-print("\nClassification Report:\n")
-print(classification_report(y_test, y_pred, zero_division=0))
-
-# Save model + vectorizer
-os.makedirs("models", exist_ok=True)
-joblib.dump(model, "models/model.pkl")
-joblib.dump(vectorizer, "models/vectorizer.pkl")
-
-print("\n✅ Model saved!")
+print("\n✅ Training complete!")
+print(f"F1 Score (weighted): {metrics['f1_weighted']}")
+print(f"Train size: {metrics['train_size']}")
+print(f"Test size:  {metrics['test_size']}")
+print("\nMetrics saved to metrics.json")
+print("Model saved to models/")

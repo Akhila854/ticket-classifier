@@ -1,11 +1,501 @@
 text,category
-"I can't log into my account","Account"
-"My payment was deducted twice","Billing"
-"App is crashing when I open it","Technical"
-"How do I change my password?","Account"
-"I want a refund","Billing"
-"The website is very slow","Technical"
-"What are your working hours?","General"
-"I forgot my username","Account"
-"Charged incorrectly","Billing"
-"Feature is not working","Technical"
+I accidentally clicked on a suspicious link in an email,Security
+I noticed unusual activity on my company account,Security
+My screen is being shared without my permission,Security
+My account does not have access to the required database,Account
+I cannot access the company intranet from home,Network
+Need to update my account recovery email address,Account
+I cannot send emails due to network connectivity issues,Network
+The proxy settings are blocking certain websites,Network
+A USB drive of unknown origin was found in the office,Security
+My password expired and the reset link is not working,Account
+The headphone jack on my laptop is not working,Hardware
+I keep getting DNS errors when browsing,Network
+VPN is not connecting and giving authentication errors,Network
+The ethernet cable connection is unstable,Network
+The RAM in my computer needs to be upgraded,Hardware
+The proxy settings are blocking certain websites,Network
+My computer is running very slowly after the update,Software
+My printer cartridge is empty and needs replacement,Hardware
+I cannot reach any external websites from the office,Network
+My laptop charger stopped working suddenly,Hardware
+I cannot install the required software on my machine,Software
+I need to encrypt a folder with sensitive company data,Security
+My IP address seems to be conflicting with another device,Network
+My mouse cursor freezes randomly during work,Hardware
+My account is showing incorrect department information,Account
+File sharing on the local network is not working,Network
+The webcam is not being detected by the system,Hardware
+I am locked out of my email account completely,Account
+The antivirus software is flagging a legitimate program,Software
+My IP address seems to be conflicting with another device,Network
+The CD drive is not reading any discs,Hardware
+I need a security certificate installed on my machine,Security
+The application throws an error on startup,Software
+I noticed unusual activity on my company account,Security
+My computer may have been infected with malware,Security
+I need to encrypt a folder with sensitive company data,Security
+My laptop screen is flickering and won't display properly,Hardware
+VPN is not connecting and giving authentication errors,Network
+A USB drive of unknown origin was found in the office,Security
+My IP address seems to be conflicting with another device,Network
+My IP address seems to be conflicting with another device,Network
+There is a suspicious process running in my task manager,Security
+The security scan found vulnerabilities on my system,Security
+The USB ports on my computer are not detecting any devices,Hardware
+The firewall is blocking a legitimate business application,Security
+The security scan found vulnerabilities on my system,Security
+My laptop charger stopped working suddenly,Hardware
+I need a new user account created for a new employee,Account
+My printer cartridge is empty and needs replacement,Hardware
+My monitor has dead pixels in the center of the screen,Hardware
+I cannot connect to the internet from my workstation,Network
+My browser keeps crashing when opening multiple tabs,Software
+The CD drive is not reading any discs,Hardware
+My account does not have access to the required database,Account
+My browser keeps crashing when opening multiple tabs,Software
+The WiFi password was changed and I need the new one,Network
+I need to change my username to match my new name,Account
+The application throws an error on startup,Software
+My browser keeps crashing when opening multiple tabs,Software
+The application is not compatible with my OS version,Software
+I accidentally deleted an important file and need recovery,Software
+I got a warning about an expired SSL certificate,Security
+My desktop computer won't power on at all,Hardware
+A USB drive of unknown origin was found in the office,Security
+I cannot open files in the new software version,Software
+The touchpad is not responding to any gestures,Hardware
+My email client is not syncing new messages,Software
+The webcam is not being detected by the system,Hardware
+My graphics card is causing display artifacts,Hardware
+The office network is completely down for our floor,Network
+File sharing on the local network is not working,Network
+I need a new user account created for a new employee,Account
+My guest account needs to be converted to a full account,Account
+The software update failed and left the app broken,Software
+The CD drive is not reading any discs,Hardware
+The headphone jack on my laptop is not working,Hardware
+My mouse cursor freezes randomly during work,Hardware
+The firewall is blocking a legitimate business application,Security
+My password expired and the reset link is not working,Account
+My mouse cursor freezes randomly during work,Hardware
+I cannot connect to the internet from my workstation,Network
+I need a security certificate installed on my machine,Security
+I need a security certificate installed on my machine,Security
+My computer keeps overheating and shutting down,Hardware
+I cannot reach any external websites from the office,Network
+VPN is not connecting and giving authentication errors,Network
+The video conferencing app has no audio output,Software
+Laptop battery drains within 30 minutes of use,Hardware
+I need a new user account created for a new employee,Account
+I need a new user account created for a new employee,Account
+The remote desktop connection keeps timing out,Network
+The application throws an error on startup,Software
+The antivirus software is flagging a legitimate program,Software
+I need to change my username to match my new name,Account
+My account does not have access to the required database,Account
+My internet connection is extremely slow after update,Network
+The printer is making grinding noises and not printing,Hardware
+My laptop screen is flickering and won't display properly,Hardware
+Need to update my account recovery email address,Account
+I keep getting DNS errors when browsing,Network
+My computer may have been infected with malware,Security
+I got a warning about an expired SSL certificate,Security
+The software license has expired and needs renewal,Software
+My account was accessed from an unusual geographic location,Security
+My SSO login is not working with the company portal,Account
+The database application keeps throwing timeout errors,Software
+The application throws an error on startup,Software
+I need my account privileges reviewed for compliance,Account
+I accidentally deleted an important file and need recovery,Software
+The security scan found vulnerabilities on my system,Security
+I am getting very slow internet speeds today,Network
+My login credentials are not being accepted by the system,Account
+My antivirus detected a threat and quarantined a file,Security
+My computer keeps overheating and shutting down,Hardware
+The antivirus software is flagging a legitimate program,Software
+The application is not compatible with my OS version,Software
+There is a suspicious process running in my task manager,Security
+My monitor has dead pixels in the center of the screen,Hardware
+The headphone jack on my laptop is not working,Hardware
+A colleague received ransomware on their workstation,Security
+My monitor has dead pixels in the center of the screen,Hardware
+I cannot connect to the internet from my workstation,Network
+The RAM in my computer needs to be upgraded,Hardware
+My account has been locked after too many login attempts,Account
+I cannot install the required software on my machine,Software
+I need to change my username to match my new name,Account
+Need to update my account recovery email address,Account
+I need to add a new device to my account for MFA,Account
+My account permissions need to be updated for a project,Account
+I keep getting DNS errors when browsing,Network
+The software is stuck in an infinite loading loop,Software
+I need my account privileges reviewed for compliance,Account
+My laptop screen is flickering and won't display properly,Hardware
+I am unable to connect to the company VPN,Network
+My account does not have access to the required database,Account
+The power button on my laptop is stuck,Hardware
+My external hard drive is not being recognized,Hardware
+My network drive is not accessible from my machine,Network
+I cannot access the company intranet from home,Network
+I cannot connect to the internet from my workstation,Network
+I need to reset my two-factor authentication device,Account
+I received an email with an attachment I should not open,Security
+I received an email with an attachment I should not open,Security
+Need to update my account recovery email address,Account
+My account is showing incorrect department information,Account
+VPN is not connecting and giving authentication errors,Network
+Need to update my account recovery email address,Account
+A colleague received ransomware on their workstation,Security
+I received a suspicious phishing email asking for credentials,Security
+I need a new user account created for a new employee,Account
+My account has been locked after too many login attempts,Account
+My graphics card is causing display artifacts,Hardware
+My computer is running very slowly after the update,Software
+The application throws an error on startup,Software
+The keyboard keys are sticking and not responding,Hardware
+I am getting very slow internet speeds today,Network
+My account is showing incorrect department information,Account
+The office network is completely down for our floor,Network
+My account was accessed from an unusual geographic location,Security
+My SSO login is not working with the company portal,Account
+My graphics card is causing display artifacts,Hardware
+The webcam is not being detected by the system,Hardware
+The application throws an error on startup,Software
+The PDF reader is not opening attachments correctly,Software
+I keep getting DNS errors when browsing,Network
+My account is showing incorrect department information,Account
+My printer cartridge is empty and needs replacement,Hardware
+The database application keeps throwing timeout errors,Software
+I cannot reach any external websites from the office,Network
+The office network is completely down for our floor,Network
+I need a specific software installed for my project,Software
+I cannot send emails due to network connectivity issues,Network
+My browser keeps crashing when opening multiple tabs,Software
+The network printer is offline and not reachable,Network
+I got a warning about an expired SSL certificate,Security
+I cannot open files in the new software version,Software
+I received a suspicious phishing email asking for credentials,Security
+My graphics card is causing display artifacts,Hardware
+My graphics card is causing display artifacts,Hardware
+The webcam is not being detected by the system,Hardware
+My mouse cursor freezes randomly during work,Hardware
+I need my account privileges reviewed for compliance,Account
+The proxy settings are blocking certain websites,Network
+I need to reset my two-factor authentication device,Account
+I am getting very slow internet speeds today,Network
+My antivirus detected a threat and quarantined a file,Security
+There is unauthorized access showing in my account logs,Security
+My login credentials are not being accepted by the system,Account
+I noticed unusual activity on my company account,Security
+I need to reset my two-factor authentication device,Account
+The headphone jack on my laptop is not working,Hardware
+The network printer is offline and not reachable,Network
+There is a suspicious process running in my task manager,Security
+I cannot open files in the new software version,Software
+My second monitor is not being detected,Hardware
+I am getting very slow internet speeds today,Network
+I need a new user account created for a new employee,Account
+The application is not compatible with my OS version,Software
+I need to encrypt a folder with sensitive company data,Security
+My computer is running very slowly after the update,Software
+The ethernet cable connection is unstable,Network
+The keyboard keys are sticking and not responding,Hardware
+My computer may have been infected with malware,Security
+I need a security certificate installed on my machine,Security
+My computer keeps overheating and shutting down,Hardware
+I accidentally deleted an important file and need recovery,Software
+I need admin rights to install software on my machine,Account
+I cannot open files in the new software version,Software
+I cannot reach any external websites from the office,Network
+I cannot open files in the new software version,Software
+File sharing on the local network is not working,Network
+The WiFi password was changed and I need the new one,Network
+I received an email with an attachment I should not open,Security
+I cannot log in to the HR portal with my credentials,Account
+I need a security certificate installed on my machine,Security
+My screen recording software is not capturing audio,Software
+The proxy settings are blocking certain websites,Network
+I am unable to connect to the company VPN,Network
+I need to report a potential data breach incident,Security
+I am locked out of my email account completely,Account
+My mouse cursor freezes randomly during work,Hardware
+There is a suspicious process running in my task manager,Security
+A coworker is reporting signs of a keylogger on their PC,Security
+A colleague received ransomware on their workstation,Security
+My account is showing incorrect department information,Account
+I noticed unusual activity on my company account,Security
+There is a suspicious process running in my task manager,Security
+I need to reset my two-factor authentication device,Account
+My IDE is not recognizing the installed packages,Software
+Microsoft Office crashes every time I open a document,Software
+The touchpad is not responding to any gestures,Hardware
+My monitor has dead pixels in the center of the screen,Hardware
+I received a suspicious phishing email asking for credentials,Security
+The application is not compatible with my OS version,Software
+My screen recording software is not capturing audio,Software
+I cannot open files in the new software version,Software
+Laptop battery drains within 30 minutes of use,Hardware
+The application settings reset after every reboot,Software
+The firewall is blocking a legitimate business application,Security
+I am locked out of my email account completely,Account
+My graphics card is causing display artifacts,Hardware
+I need to report a potential data breach incident,Security
+The USB ports on my computer are not detecting any devices,Hardware
+The security scan found vulnerabilities on my system,Security
+Cannot access shared folders on the network,Network
+My antivirus detected a threat and quarantined a file,Security
+My account has been locked after too many login attempts,Account
+My computer is running very slowly after the update,Software
+I need a security certificate installed on my machine,Security
+I received an email with an attachment I should not open,Security
+I think my password has been compromised and stolen,Security
+My mouse cursor freezes randomly during work,Hardware
+My external hard drive is not being recognized,Hardware
+I need to encrypt a folder with sensitive company data,Security
+I need to report a potential data breach incident,Security
+I received an email with an attachment I should not open,Security
+VPN is not connecting and giving authentication errors,Network
+My internet connection is extremely slow after update,Network
+My SSO login is not working with the company portal,Account
+The video conferencing app has no audio output,Software
+My IDE is not recognizing the installed packages,Software
+I cannot connect to the internet from my workstation,Network
+There is a suspicious process running in my task manager,Security
+I cannot install the required software on my machine,Software
+A USB drive of unknown origin was found in the office,Security
+The antivirus software is flagging a legitimate program,Software
+My internet connection is extremely slow after update,Network
+I cannot install the required software on my machine,Software
+I need to encrypt a folder with sensitive company data,Security
+My IDE is not recognizing the installed packages,Software
+I need to reset my two-factor authentication device,Account
+Laptop battery drains within 30 minutes of use,Hardware
+The office network is completely down for our floor,Network
+The application is not compatible with my OS version,Software
+I cannot access a shared mailbox I was given rights to,Account
+My IP address seems to be conflicting with another device,Network
+My account was deactivated by mistake and needs restoring,Account
+The antivirus software is flagging a legitimate program,Software
+I cannot send emails due to network connectivity issues,Network
+My graphics card is causing display artifacts,Hardware
+Laptop battery drains within 30 minutes of use,Hardware
+I cannot send emails due to network connectivity issues,Network
+My laptop charger stopped working suddenly,Hardware
+There is a suspicious process running in my task manager,Security
+Laptop battery drains within 30 minutes of use,Hardware
+My antivirus detected a threat and quarantined a file,Security
+The application throws an error on startup,Software
+The remote desktop connection keeps timing out,Network
+The application throws an error on startup,Software
+My account permissions need to be updated for a project,Account
+My mouse cursor freezes randomly during work,Hardware
+I am unable to connect to the company VPN,Network
+The keyboard keys are sticking and not responding,Hardware
+I need my account privileges reviewed for compliance,Account
+The keyboard keys are sticking and not responding,Hardware
+My network drive is not accessible from my machine,Network
+The ethernet cable connection is unstable,Network
+My login credentials are not being accepted by the system,Account
+The WiFi password was changed and I need the new one,Network
+The firewall is blocking a legitimate business application,Security
+My desktop computer won't power on at all,Hardware
+The software update failed and left the app broken,Software
+The CD drive is not reading any discs,Hardware
+A colleague received ransomware on their workstation,Security
+I need a new user account created for a new employee,Account
+I need a new user account created for a new employee,Account
+I keep getting DNS errors when browsing,Network
+I received an email with an attachment I should not open,Security
+My computer keeps overheating and shutting down,Hardware
+The printer is making grinding noises and not printing,Hardware
+Laptop battery drains within 30 minutes of use,Hardware
+The WiFi connection keeps dropping every few minutes,Network
+I cannot access the company intranet from home,Network
+The headphone jack on my laptop is not working,Hardware
+I need to report a potential data breach incident,Security
+The RAM in my computer needs to be upgraded,Hardware
+My screen recording software is not capturing audio,Software
+My account has been locked after too many login attempts,Account
+My network drive is not accessible from my machine,Network
+Need to update my account recovery email address,Account
+The WiFi password was changed and I need the new one,Network
+I cannot access a shared mailbox I was given rights to,Account
+My login credentials are not being accepted by the system,Account
+I noticed unusual activity on my company account,Security
+The PDF reader is not opening attachments correctly,Software
+I am unable to connect to the company VPN,Network
+Cannot access shared folders on the network,Network
+The security scan found vulnerabilities on my system,Security
+My network drive is not accessible from my machine,Network
+A coworker is reporting signs of a keylogger on their PC,Security
+The printer is making grinding noises and not printing,Hardware
+The antivirus software is flagging a legitimate program,Software
+The printer is making grinding noises and not printing,Hardware
+My screen recording software is not capturing audio,Software
+I need to change my username to match my new name,Account
+The headphone jack on my laptop is not working,Hardware
+I need my account privileges reviewed for compliance,Account
+The software is stuck in an infinite loading loop,Software
+I need to reset my two-factor authentication device,Account
+My computer is running very slowly after the update,Software
+My mouse cursor freezes randomly during work,Hardware
+My email client is not syncing new messages,Software
+I need admin rights to install software on my machine,Account
+My laptop charger stopped working suddenly,Hardware
+The software license has expired and needs renewal,Software
+My computer keeps overheating and shutting down,Hardware
+The software is stuck in an infinite loading loop,Software
+I need to change my username to match my new name,Account
+I forgot my password and cannot log into my account,Account
+Cannot access shared folders on the network,Network
+My account has been locked after too many login attempts,Account
+The printer is making grinding noises and not printing,Hardware
+There is a suspicious process running in my task manager,Security
+My screen recording software is not capturing audio,Software
+My login credentials are not being accepted by the system,Account
+I cannot access a shared mailbox I was given rights to,Account
+My computer is running very slowly after the update,Software
+My screen is being shared without my permission,Security
+I need admin rights to install software on my machine,Account
+The PDF reader is not opening attachments correctly,Software
+My computer is running very slowly after the update,Software
+The video conferencing app has no audio output,Software
+I cannot log in to the HR portal with my credentials,Account
+The WiFi password was changed and I need the new one,Network
+I keep getting DNS errors when browsing,Network
+My computer keeps overheating and shutting down,Hardware
+I accidentally deleted an important file and need recovery,Software
+The proxy settings are blocking certain websites,Network
+I accidentally clicked on a suspicious link in an email,Security
+My external hard drive is not being recognized,Hardware
+There is unauthorized access showing in my account logs,Security
+The video conferencing app has no audio output,Software
+I cannot connect to the internet from my workstation,Network
+The video conferencing app has no audio output,Software
+The network printer is offline and not reachable,Network
+The headphone jack on my laptop is not working,Hardware
+My account has been locked after too many login attempts,Account
+The database application keeps throwing timeout errors,Software
+My IDE is not recognizing the installed packages,Software
+I keep getting DNS errors when browsing,Network
+I accidentally deleted an important file and need recovery,Software
+The firewall is blocking a legitimate business application,Security
+The USB ports on my computer are not detecting any devices,Hardware
+My IP address seems to be conflicting with another device,Network
+I need to change my username to match my new name,Account
+The touchpad is not responding to any gestures,Hardware
+I cannot access a shared mailbox I was given rights to,Account
+I got a warning about an expired SSL certificate,Security
+The network printer is offline and not reachable,Network
+The CD drive is not reading any discs,Hardware
+The headphone jack on my laptop is not working,Hardware
+My printer cartridge is empty and needs replacement,Hardware
+The video conferencing app has no audio output,Software
+My IP address seems to be conflicting with another device,Network
+I received a suspicious phishing email asking for credentials,Security
+The ethernet cable connection is unstable,Network
+A coworker is reporting signs of a keylogger on their PC,Security
+I cannot send emails due to network connectivity issues,Network
+I need to change my username to match my new name,Account
+My laptop charger stopped working suddenly,Hardware
+My screen recording software is not capturing audio,Software
+The WiFi password was changed and I need the new one,Network
+File sharing on the local network is not working,Network
+I forgot my password and cannot log into my account,Account
+I cannot install the required software on my machine,Software
+The database application keeps throwing timeout errors,Software
+There is a suspicious process running in my task manager,Security
+My account is showing incorrect department information,Account
+The office network is completely down for our floor,Network
+Need to update my account recovery email address,Account
+The ethernet cable connection is unstable,Network
+I received an email with an attachment I should not open,Security
+The remote desktop connection keeps timing out,Network
+My computer is running very slowly after the update,Software
+The firewall is blocking a legitimate business application,Security
+Need to update my account recovery email address,Account
+My computer keeps overheating and shutting down,Hardware
+My computer is running very slowly after the update,Software
+My computer is running very slowly after the update,Software
+I cannot open files in the new software version,Software
+The antivirus software is flagging a legitimate program,Software
+I need admin rights to install software on my machine,Account
+My antivirus detected a threat and quarantined a file,Security
+I need to change my username to match my new name,Account
+My screen recording software is not capturing audio,Software
+My password expired and the reset link is not working,Account
+The WiFi connection keeps dropping every few minutes,Network
+My password expired and the reset link is not working,Account
+My browser keeps crashing when opening multiple tabs,Software
+The software license has expired and needs renewal,Software
+I am locked out of my email account completely,Account
+There is unauthorized access showing in my account logs,Security
+A USB drive of unknown origin was found in the office,Security
+My laptop charger stopped working suddenly,Hardware
+There is unauthorized access showing in my account logs,Security
+The touchpad is not responding to any gestures,Hardware
+The firewall is blocking a legitimate business application,Security
+I keep getting DNS errors when browsing,Network
+The software is stuck in an infinite loading loop,Software
+The RAM in my computer needs to be upgraded,Hardware
+My IDE is not recognizing the installed packages,Software
+The software update failed and left the app broken,Software
+My antivirus detected a threat and quarantined a file,Security
+A colleague received ransomware on their workstation,Security
+The printer is making grinding noises and not printing,Hardware
+Cannot access shared folders on the network,Network
+I accidentally deleted an important file and need recovery,Software
+My password expired and the reset link is not working,Account
+The printer is making grinding noises and not printing,Hardware
+My account was deactivated by mistake and needs restoring,Account
+A USB drive of unknown origin was found in the office,Security
+I need a security certificate installed on my machine,Security
+The headphone jack on my laptop is not working,Hardware
+I need to change my username to match my new name,Account
+My SSO login is not working with the company portal,Account
+I think my password has been compromised and stolen,Security
+My internet connection is extremely slow after update,Network
+My computer is running very slowly after the update,Software
+I accidentally deleted an important file and need recovery,Software
+My IP address seems to be conflicting with another device,Network
+I need admin rights to install software on my machine,Account
+I forgot my password and cannot log into my account,Account
+The USB ports on my computer are not detecting any devices,Hardware
+I accidentally deleted an important file and need recovery,Software
+I need my account privileges reviewed for compliance,Account
+My antivirus detected a threat and quarantined a file,Security
+My IDE is not recognizing the installed packages,Software
+I cannot install the required software on my machine,Software
+The touchpad is not responding to any gestures,Hardware
+I cannot access a shared mailbox I was given rights to,Account
+I received a suspicious phishing email asking for credentials,Security
+My account was deactivated by mistake and needs restoring,Account
+The database application keeps throwing timeout errors,Software
+The WiFi password was changed and I need the new one,Network
+My computer keeps overheating and shutting down,Hardware
+My laptop screen is flickering and won't display properly,Hardware
+My computer keeps overheating and shutting down,Hardware
+I keep getting DNS errors when browsing,Network
+There is unauthorized access showing in my account logs,Security
+My network drive is not accessible from my machine,Network
+My network drive is not accessible from my machine,Network
+My SSO login is not working with the company portal,Account
+VPN is not connecting and giving authentication errors,Network
+Need to update my account recovery email address,Account
+My screen is being shared without my permission,Security
+The touchpad is not responding to any gestures,Hardware
+I am getting very slow internet speeds today,Network
+I cannot log in to the HR portal with my credentials,Account
+My login credentials are not being accepted by the system,Account
+My SSO login is not working with the company portal,Account
+Microsoft Office crashes every time I open a document,Software
+The WiFi password was changed and I need the new one,Network
+The keyboard keys are sticking and not responding,Hardware
+I cannot log in to the HR portal with my credentials,Account
+The webcam is not being detected by the system,Hardware
+I forgot my password and cannot log into my account,Account
+The firewall is blocking a legitimate business application,Security
+A coworker is reporting signs of a keylogger on their PC,Security
+My screen is being shared without my permission,Security
+A colleague received ransomware on their workstation,Security
