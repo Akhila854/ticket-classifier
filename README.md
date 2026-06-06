@@ -10,10 +10,15 @@ an end-to-end CI/CD pipeline.
 
 | Metric | Score |
 |--------|-------|
-| F1 Score (weighted) | **1.00** |
-| Train samples | 400 |
-| Test samples | 100 |
-| Categories | 5 (Hardware, Software, Network, Account, Security) |
+| F1 Score (weighted) | **0.9924** |
+| Training samples | 1,056 |
+| Test samples | 264 |
+| Total dataset | 1,320 IT support tickets with class imbalance |
+| Hardware | 360 |
+| Software | 279 |
+| Network | 233 |
+| Security | 237 |
+| Account | 211 |
 | Embedding model | `sentence-transformers/all-MiniLM-L6-v2` |
 
 > Upgraded from TF-IDF baseline — LLM embeddings capture semantic 
