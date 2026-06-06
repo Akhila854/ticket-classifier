@@ -14,6 +14,7 @@ an end-to-end CI/CD pipeline.
 | Training samples | 1,056 |
 | Test samples | 264 |
 | Total dataset | 1,320 IT support tickets with class imbalance |
+| Categories | 5 |
 | Hardware | 360 |
 | Software | 279 |
 | Network | 233 |
@@ -25,6 +26,18 @@ an end-to-end CI/CD pipeline.
 > meaning that keyword matching cannot.
 
 ---
+
+## 🔬 Experiment Tracking
+
+MLflow tracks every training run — parameters, metrics, and model artifacts.
+
+![MLflow Dashboard](docs/mlflow_dashboard.png)
+
+Run the dashboard locally:
+```bash
+mlflow ui
+```
+Open `http://localhost:5000`
 
 ## 🏗️ Architecture
 
