@@ -1,3 +1,5 @@
+[![Hugging Face](https://img.shields.io/badge/🤗-Model%20on%20HuggingFace-yellow)](https://huggingface.co/akhilaarekal/ticket-classifier)
+
 # 🎫 Smart Support Ticket Classifier
 
 An LLM-powered IT support ticket classification system using 
