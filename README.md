@@ -1,5 +1,8 @@
 [![Hugging Face](https://img.shields.io/badge/🤗-Model%20on%20HuggingFace-yellow)](https://huggingface.co/akhilaarekal/ticket-classifier)
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ticket-classifier-ep53ybfezntlqbcemxgter.streamlit.app)
+
+
 # 🎫 Smart Support Ticket Classifier
 
 An LLM-powered IT support ticket classification system using 
